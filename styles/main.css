@@ -1,0 +1,140 @@
+/*@import url(//fonts.googleapis.com/css?family=Great+Vibes|Amaranth);*/
+@font-face {
+  font-family: 'Great Vibes - local';
+  src: url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Amaranth - local';
+  src: url('../fonts/Amaranth-Regular.ttf') format('truetype');
+}
+
+body {
+  color: #d4af37;
+  background-color: #222222;
+  background-image: url('../images/background.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  font-family: 'Amaranth - local', 'Amaranth', sans-serif;
+  overflow-y: scroll;
+
+}
+
+.noscroll body {
+  overflow-y: hidden;
+}
+h1, h2, h3 {
+  font-family: 'Great Vibes - local', 'Great Vibes', cursive;
+}
+
+.indent {
+  padding-left: 100px;
+}
+
+.photo-credit {
+  float: right;
+  margin: 5px;
+  
+  font-family: 'Amaranth - local', 'Amaranth', sans-serif;
+  font-style: italic;
+  font-size: 50%;
+  color: gray;
+}
+
+.flag-icon {
+  float: right;
+  vertical-align: middle;
+  margin: 5px;
+  width: 20px;
+  height: 15px;
+  border: 1px solid black;
+}
+
+.flag-icon:hover {
+  border: 1px solid white;
+}
+    
+.flag-cz {
+  background: url('../images/flags/cz.svg');
+  background-size: contain;
+}
+
+.flag-en {
+  background: url('../images/flags/gb.svg');
+  background-size: contain;
+}
+
+#contact-form {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#contact-form label {
+  width: 100%;
+  padding: 10px;
+  
+  color: #d4af37;
+  background: none;
+  border: none;
+  
+  font-family: 'Amaranth - local', 'Amaranth', sans-serif;
+  font-size: 100%;
+}
+#contact-form label:hover {
+  color: #d4af37;
+  background: none;
+  border: none;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea {
+  width:100%;
+  box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  -webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  -moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  border:1px solid #CCC;
+  background:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+  border-radius:5px;
+  font-family: 'Amaranth - local', 'Amaranth', sans-serif;
+}
+#contact-form button[type="submit"] {
+  cursor:pointer;
+  width: 100%;
+  
+  color: #cc9900;
+  background: none;
+  border: 2px solid #cc9900;
+  -moz-border-radius: 0.6em 0.6em 0.6em 0.6em;
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  
+  font-family: 'Amaranth - local', 'Amaranth', sans-serif;
+  font-size: 36px;	
+  line-height: 48px;
+  text-align: center;
+    
+  -moz-text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+  -webkit-text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+}
+
+#contact-form button[type="submit"]:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+.fb-link {
+    text-decoration: none;
+    color: #cc9900;
+}
+.fb-link:hover {
+    color: white;
+}
+.fb-link span {
+    position: absolute;
+    margin: 10px;
+    line-height: 30px;
+}
+

@@ -1,0 +1,131 @@
+.tabs {
+  float: none;
+  list-style: none;
+  position: relative;
+  text-align: left;
+  
+  min-width: 480px;
+  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.tabs li {
+  float: left;
+  display: block;
+  width: 20%;
+  min-width: 80px;
+}
+
+.tabs input[type="radio"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.tabs label {
+  display: block;
+  top: 4px;
+  padding: 10px 20px 5px 20px;
+  
+  border: 1px solid #d4af37;
+  border-bottom-style: none;
+  -moz-border-radius: 0.6em 1.2em 0em 0em;
+  border-radius: 0.6em 1.2em 0em 0em;
+  
+  font-family: 'Great Vibes - local', 'Great Vibes', cursive;
+  font-size: 155%;
+  color: #d4af37;
+  background-color: #9d112b;
+  cursor: pointer;
+  position: relative;
+  
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs label:hover {
+  color: white;
+  background-color: #9d112b;
+  border: 1px solid white;
+  border-bottom-style: none;
+}
+
+.tabs .tab-content {
+  display: none;
+  overflow: visible;
+  position: absolute;
+  
+  top: 51px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+  line-height: 25px;
+  color: #cc9900;
+  background: linear-gradient(to bottom, rgba(140,0,26,1), rgba(140,0,26,0.5));
+  border: 2px solid #cc9900;
+}
+
+/* Make the first paragraph (bio) and first heading of the first section (shows) have no top margin */
+.tabs .tab-content p:first-of-type {
+  margin-top: 0;
+}
+.tabs .tab-content section:first-of-type h2:first-of-type {
+  margin-top: 0;
+}
+
+.tabs [id^="tab"]:checked + label {
+  z-index: 1;
+  top: 0;
+  padding-top: 15px;
+  
+  color: #cc9900;
+  background-color: #8c001a;
+  font-weight: bold;
+  border: 2px solid #cc9900;
+  border-bottom-style: none;
+}
+
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}
+
+.event-list {
+  display: inline-block;
+}
+
+.event-list h2 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.event-list ol {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.event-list li {
+  width: 100%;
+}
+
+.event-list time {
+  display: inline-block;
+  width: 180px;
+  font-family: 'Great Vibes - local', 'Great Vibes', cursive;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.tabs .normal-list ul {
+  list-style: disc outside;
+}
+
+.tabs .normal-list li {
+  width: 100%;
+  float: none;
+  display: list-item;
+}

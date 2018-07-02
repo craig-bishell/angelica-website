@@ -1,0 +1,65 @@
+.gallery figure {
+  z-index: 1;
+  position: relative;
+  width: 150px;
+  margin: 5px;
+  float: left;
+
+  background: #cc9900;
+  border: 5px solid #d4af37;
+  -webkit-box-shadow: 0 3px 10px #666;
+  -moz-box-shadow: 0 3px 10px #666;
+  box-shadow: 0 3px 10px #666;
+  
+  /*
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+  */
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.gallery figcaption {
+  font-family: 'Great Vibes - local', 'Great Vibes', cursive;
+
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  color: black;
+}
+
+.gallery figure img {
+  width: 150px;
+  height: 150px;
+}
+
+.gallery figure:hover {
+  /*
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  */
+/*
+  -webkit-box-shadow: 0 3px 10px #ccc;
+  -moz-box-shadow: 0 3px 10px #ccc;
+  box-shadow: 0 3px 10px #ccc;
+}
+
+.gallery figure:focus {
+*/
+  outline:none;
+  /*
+  -webkit-transform: rotate(-3deg) scale(2.5);
+  -moz-transform: rotate(-3deg) scale(2.5);
+  transform: rotate(-3deg) scale(2.5);
+  */
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  transform: scale(2.5);
+  -webkit-box-shadow: 0 3px 10px #ccc;
+  -moz-box-shadow: 0 3px 10px #ccc;
+  box-shadow: 0 3px 10px #ccc;
+  z-index: 9999;
+}
