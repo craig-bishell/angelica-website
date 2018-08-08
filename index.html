@@ -6,6 +6,12 @@
     <link rel="stylesheet" type="text/css" href="./styles/tabs.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/gallery.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/album.css"/>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById('contact-form').submit();
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -32,7 +38,7 @@
             <p>Angelica has won the title of first runner up at Miss Burlesque NZ 2015 and second runner up in 2014. She performs regularly at various show in Australasia and around Europe and at international burlesque festivals including the Australian and New Zealand, twice at Como Lake Festival in Italy, Perth in Australia or prestigious Show Me Burlesque Festival in St. Louis USA, where she went twice as part of her three USA tours. During the last tour in 2016, she was awarded Best Costume at Oklahoma Burlesque Festival for her famous signature routine Mucha Goddess. She has headlined shows in USA, Germany and France and is soon to appear at performances in various places in Italy, France and Germany as well as the exotic Iceland. Overall she has performed in 15 countries around the world.</p>
             <p>In 2013 Angelica founded Bohemian Burlesque, production company for lavish high class shows in Czech republic and in New Zealand. Her production was the first international burlesque show in Czech republic and the very first burlesque in her hometown of Brno, where Bohemian Burlesque created solid fan base since. In 2016 she produced the first year of Bohemian Burlesque Festival, the biggest burlesque event in the Czech republic. With spectacular historic venues and the best artists in the industry as headliners including Dirty Martini, Lada Redstar, Ray Gunn, Vicky Butterfly or Jo Weldon, the festival continues to be a success into its third year in November 2018.  Angelica is also an inspirational teacher in her Bohemian School of Burlesque, supporting the new talents in Czech burlesque community and helping woman rediscover and strenghten their feminity and self confidence.</p>
             <a href="https://www.facebook.com/angelicaglamourCZ/" target="_blank" class="fb-link"><img src="./images/social/FB-f-Logo__blue_50.png"/><span>Follow Angelica on FB.</span></a>
-            <p>For production activities of Angelica´s company Bohemian Burlesque visit <a href="https://www.facebook.com/BohemianBurlesquee/" target="_blank" class="fb-link">FB page</a>.</p>
+            <p>For production activities of Angelica&apos;s company Bohemian Burlesque visit <a href="https://www.facebook.com/BohemianBurlesquee/" target="_blank" class="fb-link">FB page</a>.</p>
             <p>For Bohemian Burlesque Festival visit the <a href="https://www.bohemianburlesquefestival.com" target="_blank" class="fb-link">website</a> or <a href="https://www.facebook.com/bohemianburlesquefest/" target="_blank" class="fb-link">FB page</a>.</p>
             <p>For classes and Bohemian Burlesque School visit <a href="https://www.facebook.com/bohemianschoolburlesque/" target="_blank" class="fb-link">FB page</a>.</p>
           </section>
@@ -95,40 +101,89 @@
           <label for="tab3">Shows</label>
           <section id="tab-content3" class="tab-content">
             <section class="event-list">
-              <h2>Upcoming Shows</h2>
+              <h2>Upcoming Shows and Events</h2>
               <ol>
                 <li>
-                  <time datetime="2016-05-19/2016-05-21">19 &ndash; 21 May 2016</time>
-                  <span>Show Me Burlesque Festival, St. Louis, Missouri USA</span>
+                  <time datetime="2018-08-18">18 August 2018</time>
+                  <span>Hradecka V8, Hradec Kralove, Czech Republic</span>
                 </li>
                 <li>
-                  <time datetime="2016-05-16/2016-06-15">16 May &ndash; 15 June 2016</time>
-                  <span>USA tour, more dates to be announced...</span>
+                  <time datetime="2018-09-01">1 September 2018</time>
+                  <span><a href="https://www.facebook.com/events/2179703898980148/" target="_blank" class="fb-link">Najdete v sobe ztracenou femme fatale / Find Your Inner Femme Fatale</a> (workshop by Elegantni Cesko)</span>
                 </li>
                 <li>
-                  <time datetime="2016-07-13">13 July 2016</time>
-                  <span>Angelica is moving back to Europe with many performances coming...</span>
+                  <time datetime="2018-09-14">14 September 2018</time>
+                  <span>Reykjavik Kabarett, Reykjavik, Iceland</span>
+                </li>
+                <li>
+                  <time datetime="2018-09-15">15 September 2018</time>
+                  <span><a href="https://www.facebook.com/events/1021653511323622/" target="_blank" class="fb-link">S Laskou 2018</a>, Divadlo na Pradle, Prague, Czech republic <b>(MC and Performer)</b></span>
+                </li>
+                <li>
+                  <time datetime="2018-09-22/2018-09-23">22 &ndash; 23 September 2018</time>
+                  <span>Taormina Burlesque Festival, Sicilly Italy <b>(Special Guest and Judge)</b></span>
+                </li>
+                <li>
+                  <time datetime="2018-09-28/2018-09-30">28 &ndash; 30. September 2018</time>
+                  <span>Cabaret &amp; Burlesque Torino Festival, Torino, Italy</span>
+                </li>
+                <li>
+                  <time datetime="2018-10-12/2018-10-13">12 &ndash; 13 October 2018</time>
+                  <span>Le Cabaret Burlesque, La Nouvelle Seine, Paris, France</span>
+                </li>
+                <li>
+                  <time datetime="2018-10-14">14 October 2018</time>
+                  <span>Le Rideau Rouge, Lyon, France</span>
+                </li>
+                <li>
+                  <time datetime="2018-10-19/2018-10-20">19 &ndash; 20 October 2018</time>
+                  <span>Bavarian Burlesque Festival</span>
+                </li>
+                <li>
+                  <time datetime="2018-11-01/2018-11-04">1 &ndash; 4 November 2018</time>
+                  <span>Bohemian Burlesque Festival,  Brno and Prague, Czech republic <b>(Producer, MC and Performer)</b></span>
+                </li>
+                <li>
+                  <time datetime="2018-11-08/2018-11-11">8 &ndash; 11 November 2018</time>
+                  <span>BurlyCon, Seattle, USA</span>
+                </li>
+                <li>
+                  <time datetime="2018-11-11/2018-11-20">11 &ndash; 20 November 2018</time>
+                  <span>Fourth Tour of the USA</span>
                 </li>
               </ol>
+              <p>More dates coming, get in touch to book yours.</p>
             </section>
             <section class="event-list">
               <h2>Past Shows</h2>
               <ol>
                 <li>
+                  <time datetime="2018-06-02">2 June 2018</time>
+                  <span>Wunder Holidays, Cantada Paris, France <b>(Headliner)</b></span>
+                </li>
+                <li>
+                  <time datetime="2017-10-20">20 October 2017</time>
+                  <span>Fetish Market, Kotelna Prague, Czech republic</span>
+                </li>
+                <li>
+                  <time datetime="2017-06-16/2017-06-17">16 &dash; 17 June 2017</time>
+                  <span>Oklahoma City Burlesque Festival, Oklahoma City USA <b>(won Best Costume for Mucha Goddess)</b></span>
+                </li>
+                <li>
+                  <time datetime="2017-05-23">23 May 2017</time>
+                  <span>Peel Me a Glove, Sid&apos;s Golds Room, New York USA</span>
+                </li>
+                <li>
+                  <time datetime="2016-12-17">17 December 2016</time>
+                  <span>Burlesque show, Zeppelin Museum, Frindrichshafen, Germany <b>(Headliner)</b></span>
+                </li>
+                <li>
+                  <time datetime="2016-05-19/2016-05-21">19 &dash; 21 May 2016</time>
+                  <span>Show Me Burlesque Festival, St. Louis, Missouri USA</span>
+                </li>
+                <li>
                   <time datetime="2016-03-19">19 March 2016</time>
                   <span>Burlesque Idol Newcastle 2016, Lizzottes, Newcastle, Australia</span>
-                </li>
-                <li>
-                  <time datetime="2016-01-09">9 January 2016</time>
-                  <span>Saturday Evening Burlesque, Cardinals Burlesque bar, Prague CZ</span>
-                </li>
-                <li>
-                  <time datetime="2016-01-09">16 December 2015</time>
-                  <span>Burlesque Wednesday, Cardinals Burlesque bar, Prague CZ</span>
-                </li>
-                <li>
-                  <time datetime="2015-10-31">31 October 2015</time>
-                  <span>Pirate City Rollers Undead Halloween Party, The Thirsty Dog, Auckland NZ</span>
                 </li>
                 <li>
                   <time datetime="2015-07-16/2015-07-19">16 &dash; 19 July 2015</time>
@@ -155,20 +210,8 @@
                   <span>Miss Burlesque NZ 2015, White House Auckland NZ <b>(won First Runner Up)</b></span>
                 </li>
                 <li>
-                  <time datetime="2015-03-28">28 March 2015</time>
-                  <span>Ceroc Counties Burlesque Party, Auckland NZ</span>
-                </li>
-                <li>
-                  <time datetime="2015-03-14">14 March 2015</time>
-                  <span>Las Vegas Nights Burlesque &amp; Cabaret Show, The Winchester, Auckland NZ</span>
-                </li>
-                <li>
                   <time datetime="2015-02-28">28 February 2015</time>
                   <span>Crazy Diamond Burlesque, The Meteor Theatre, Hamilton NZ</span>
-                </li>
-                <li>
-                  <time datetime="2014-10-31">31 October 2014</time>
-                  <span>Creepy Carnival Halloween show, Vanity bar, Rotorua NZ</span>
                 </li>
                 <li>
                   <time datetime="2014-10-09/2014-10-11">9 &dash; 11 October 2014</time>
@@ -187,40 +230,12 @@
                   <span>Bohemian Cabaret &amp; Electro Speakeasy, Galatos, Auckland NZ <b>(produced by Bohemian Burlesque)</b></span>
                 </li>
                 <li>
-                  <time datetime="2014-08-14">14 August 2014</time>
-                  <span>Electrique Burlesque Slumber party Cassette Nine, Auckland NZ</span>
-                </li>
-                <li>
                   <time datetime="2014-08-05">5 August 2014</time>
                   <span>Dr. Sketchy presents Alphonse Mucha, Auckland NZ</span>
                 </li>
                 <li>
-                  <time datetime="2014-03-29">29 March 2014</time>
-                  <span>Burlesque Rocks, White House, Auckland NZ</span>
-                </li>
-                <li>
                   <time datetime="2014-03-22">22 March 2014</time>
                   <span>Miss Burlesque NZ 2014, Wellington High school, Wellington NZ <b>(won Second Runner Up)</b></span>
-                </li>
-                <li>
-                  <time datetime="2014-03-15">15 March 2014</time>
-                  <span>Midnight movies Cult Classic Burlesque Night, The Winchester, Auckland NZ</span>
-                </li>
-                <li>
-                  <time datetime="2014-01-17">17 January 2014</time>
-                  <span>Kabaret BurleLesk Third Edition, Restaurace Kinokavarna, Brno CZ <b>(produced by Bohemian Burlesque)</b></span>
-                </li>
-                <li>
-                  <time datetime="2014-01-16">16 January 2014</time>
-                  <span>Kabaret BurleLesk Third Edition, Chapeau Rouge, Prague CZ <b>(produced by Bohemian Burlesque)</b></span>
-                </li>
-                <li>
-                  <time datetime="2013-12-21">21 December 2013</time>
-                  <span>Kabaret BurleLesk Christmas Edition, Desert Club, Brno CZ <b>(produced by Bohemian Burlesque)</b></span>
-                </li>
-                <li>
-                  <time datetime="2013-12-20">20 December 2013</time>
-                  <span>Kabaret BurLesk Christmas Edition, Le Clan, Prague CZ <b>(produced by Bohemian Burlesque)</b></span>
                 </li>
                 <li>
                   <time datetime="2013-11-23">23 November 2013</time>
@@ -239,10 +254,6 @@
                   <span>Dobre rano CT, TV live appearance and interview, Brno CZ</span>
                 </li>
                 <li>
-                  <time datetime="2013-09-04">4 September 2013</time>
-                  <span>Kabaret aneb Soudni stani pro nestani, Desert club, Brno CZ</span>
-                </li>
-                <li>
                   <time datetime="2013-07-09">9 July 2013</time>
                   <span>Prague Burlesque Show, Bar and Books, Prague CZ</span>
                 </li>
@@ -257,10 +268,6 @@
                 <li>
                   <time datetime="2013-03-21">21 March 2013</time>
                   <span>Electro Swing River Cafe Nona, National Theatre, Prague CZ</span>
-                </li> 
-                <li>
-                  <time datetime="2012-12-01">1 December 2012</time>
-                  <span>Hootchy Kootchy Girls Burlesque Amateur Night, Juice bar, Auckland NZ</span>
                 </li>
                 <li>
                   <time datetime="2012-04-26">26 April 2012</time>
@@ -269,10 +276,6 @@
                 <li>
                   <time datetime="2012-03-30">30 March 2012</time>
                   <span>Bombshell Burlesque Competition at Beachhop, Whangamata NZ <b>(won First Runner Up)</b></span>
-                </li>
-                <li>
-                  <time datetime="2012-03-23">23 March 2012</time>
-                  <span>Hootchy Kootchy Girls Burlesque Amateur Night, Juice bar, Auckland NZ</span>
                 </li>
               </ol>
             </section>
@@ -450,14 +453,14 @@
                     </div>
                     <figcaption>
                       <h3>Other Acts</h3>
-                      <p>Angelica is the master of improvisation  and she is experienced in various dance forms so she is  more then happy to create a special act to suit your themed events and shows or corporate parties. All current acts can also be customised to suit your requirements and some of them can be performed in illusion bras if the the corporate fuction or so requires it. Angelica can also be booked for roving at your events in any of her glamorous costumes or in body paint.</p>
+                      <p>Angelica is the master of improvisation and she is experienced in various dance forms so she is more then happy to create a special act to suit your themed events and shows or corporate parties. All current acts can also be customised to suit your requirements and some of them can be performed in illusion bras if the the corporate fuction or so requires it. Angelica can also be booked for roving at your events in any of her glamorous costumes or in body paint.</p>
+                      <p><b>Paris:</b> Red and black classic fan dance routine performed to a medley of Edith Piaf&apos;s songs. Elegant and glamorous dream, evoking romantic mid century Paris.</p>
+                      <p><b>Tanenbaum:</b> Fun and light-hearted Christmas act great for corporate and other parties. Angelica comes out as a giant Christmas tree complete with decorations, baubles, chains and topper and even lights. Then you get the true holiday snowy treat and your cheeky present unwraps itself in front of your eyes. Who doesn't want snow for Christmas.</p>
                       <p><b>Fetish acts:</b> Angelica has two fetish acts, which can be customised to suit more daring shows, nightclub performances or stag parties. These can involve audience participant as a victim. Suitable for Halloween, tattoo conventions, any fetish events and many more occasions.</p>
                       <p><b>Golden Eye:</b> Mesmerising act with eye catching gold Isis wings performed to Golden Eye by Tina Turner. It can be customised to different song and by adding other colours and costume elements.</p>
                       <p><b>Vampire blood:</b> Channelling blood thirsty count Dracula, this acts is perfect for Halloween and any gothic and dark aesthetic or fetish events. Warning: There will be blood.</p>
-                      <p><b>Paris:</b> Red and black classic fan dance routine performed to a medley of Edith Piaf´s songs. Elegant and glamorous dream, evoking romantic mid century Paris.</p>
-                      <p><b>Tanenbaum:</b> Fun and light-hearted Christmas act great for corporate and other parties. Angelica comes out as a giant Christmas tree complete with decorations, baubles, chains and topper and even lights. Then you get the true holiday snowy treat and your cheeky present unwraps itself in front of your eyes. Who doesn't want snow for Christmas.</p>
                       <p><b>Edward the Scissorhand:</b> Acting and miming based routine channeling the legendary Tim Burton freak.</p>
-                      <p><b>Heart Pop:</b> Fun, flirty and romantic, this red heart balloon pop number with glitter is perfect for Valentines Day occasions and weddings. Your heart might have been broken or popped but it will heal with Angelica´s cheeky smile.</p>
+                      <p><b>Heart Pop:</b> Fun, flirty and romantic, this red heart balloon pop number with glitter is perfect for Valentines Day occasions and weddings. Your heart might have been broken or popped but it will heal with Angelica&apos;s cheeky smile.</p>
                     </figcaption>
                   </figure>
                   <a href="#" class="lb-button lb-button-disabled" onclick="event.preventDefault();">Video Available on Request</a>
@@ -494,25 +497,25 @@
               <div>
                 <label>
                   <span>Name (required)</span>
-                  <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+                  <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus autocomplete="name" />
                 </label>
               </div>
               <div>
                 <label>
                   <span>Country (required)</span>
-                  <input placeholder="Please enter the country you live in" type="text" tabindex="2" required>
+                  <input placeholder="Please enter the country you live in" type="text" tabindex="2" required autocomplete="country-name" />
                 </label>
               </div>
               <div>
                 <label>
                   <span>Email (required)</span>
-                  <input placeholder="Please enter your email address" type="email" tabindex="3" required>
+                  <input placeholder="Please enter your email address" type="email" tabindex="3" required autocomplete="email" />
                 </label>
               </div>
               <div>
                 <label>
                   <span>Telephone (required)</span>
-                  <input placeholder="Please enter your number" type="tel" tabindex="4" required>
+                  <input placeholder="Please enter your number" type="tel" tabindex="4" required autocomplete="tel" />
                 </label>
               </div>
               <div>
@@ -522,7 +525,8 @@
                 </label>
               </div>
               <div>
-                <button name="submit" type="submit" id="contact-submit">Send Email</button>
+                <button id="contact-submit" class="g-recaptcha" data-sitekey="6LeV7mgUAAAAAKH-Ovajm6FdOImaRJVCjYryzBn8" data-callback="onSubmit">Send Email</button>
+                <!--<button name="submit" type="submit" id="contact-submit">Send Email</button> -->
               </div>
             </form>
           </section>
